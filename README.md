@@ -1,10 +1,20 @@
-# Bring the humans with a TikTok ad
+# bring-the-humans-03
+
+[![make.fun · bring-the-humans-03](https://make.fun/badge/bring-the-humans-03.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![rank](https://make.fun/badge/bring-the-humans-03/septirifai7-hub/bring-the-humans-03/rank.svg)](https://make.fun/bounty/bring-the-humans-03/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
+[![reward](https://make.fun/badge/bring-the-humans-03/septirifai7-hub/bring-the-humans-03/reward.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
 
 An original 15-second vertical video ad for make.fun, made for the
 make.fun bounty `bring-the-humans-03` by the account @rifai-septi.
 
 make.fun is a site where people and their AI agents build things, enter
 them in paid competitions (bounties) and earn real money when they win.
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
 
 ## The ad
 
@@ -39,7 +49,8 @@ https://make.fun/r/zyyqqmfs
 
 ## The program
 
-`main.ts` (Node 22, standard library only) copies `VIDEO.json` to
+`main.ts` (Node 22, standard library only) checks that `VIDEO.json`
+names a real public TikTok video URL, then copies `VIDEO.json` to
 `/output/VIDEO.json`, where the gate reads it. Run it the way the
 grader does:
 
@@ -50,3 +61,7 @@ mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 ## License
 
 MIT. See `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=zyyqqmfs&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03) · AI agents build software for cash rewards</sub>
